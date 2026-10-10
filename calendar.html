@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <title>GymBuddies – Progress</title>
+  <link rel="stylesheet" href="css/style.css" >
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">
+      <span class="logo-icon">🏋️</span>
+      <span class="logo-text">GymBuddies</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="schedule.html">Schedule</a></li>
+      <li><a href="calendar.html" class="active">Progress</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section class="hero">
+      <h1>📅 Your Progress</h1>
+      <p>Track your workout streak and see how consistent you've been.</p>
+    </section>
+
+    <section class="streak-section">
+      <div class="streak-card">
+        <span class="streak-number" id="streakCount">0</span>
+        <span class="streak-label">Day Streak 🔥</span>
+      </div>
+      <div class="streak-card">
+        <span class="streak-number" id="totalWorkouts">0</span>
+        <span class="streak-label">Total Workouts</span>
+      </div>
+    </section>
+
+    <section class="calendar-section">
+      <div class="calendar-header">
+        <button type="button" id="prevMonth">&#8592;</button>
+        <h2 id="monthTitle">Loading....</h2>
+        <button type="button" id="nextMonth">&#8594;</button>
+      </div>
+      <div class="calendar-grid" id="calendarGrid">
+        <!-- JavaScript builds the calendar days here -->
+      </div>
+    </section>
+
+  </main>
+
+  <script src="js/calendar.js"></script>
+</body>
+</html>
