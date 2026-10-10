@@ -1,0 +1,122 @@
+/* =====================
+   1. CSS VARIABLES
+   (Light mode colours)
+   ===================== */
+
+:root {
+  --bg-colour: #f4f6f9;
+  --card-bg: #ffffff;
+  --text-colour: #222222;
+  --text-light: #666666;
+  --primary: #e94560;
+  --primary-hover: #c73652;
+  --nav-bg: #1a1a2e;
+  --nav-text: #ffffff;
+  --border: #e0e0e0;
+  --success: #28a745;
+  --error: #dc3545;
+}
+
+/* =====================
+   2. DARK MODE OVERRIDES
+   ===================== */
+
+body.dark-mode {
+  --bg-colour: #0f0f1a;
+  --card-bg: #1a1a2e;
+  --text-colour: #f0f0f0;
+  --text-light: #aaaaaa;
+  --border: #333355;
+}
+
+/* =====================
+   3. RESET & BASE
+   ===================== */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-colour);
+  color: var(--text-colour);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* =====================
+   4. NAVBAR
+   ===================== */
+
+.navbar {
+  background-color: var(--nav-bg);
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-icon {
+  font-size: 1.8rem;
+}
+
+.logo-text {
+  color: var(--nav-text);
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: var(--nav-text);
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  background-color: var(--primary);
+}
+
+.theme-btn {
+  background: none;
+  border: 2px solid var(--nav-text);
+  color: var(--nav-text);
+  font-size: 1.2rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.theme-btn:hover {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
