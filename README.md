@@ -19,7 +19,7 @@ DOM manipulation                              -       Schedule cards, calendar g
 
 ## Live Site
 
-[View GymBuddies on GitHub Pages](https://github.com/UCD-Professional-Academy-FS/JS-Project_GymBuddies)
+[View GymBuddies on GitHub Pages](https://lilianataide.github.io/Gym-Buddies/)
 
 ## Project Overview
 
