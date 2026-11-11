@@ -6,7 +6,7 @@
 // 4. A calendar to show your progress
 // 5. Dark and light mode of viewing the page
 // 6. A message for when someone completes a daily activity
-// 7. A forget password feature
+
 
 // // =====================
 
